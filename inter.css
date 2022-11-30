@@ -1,0 +1,136 @@
+
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+ }
+body{
+
+  display: grid;
+  grid-template:auto/repeat(2,1fr) ;
+  padding: 5%;
+  margin: 0;
+  background-color: brown;
+
+}
+
+form{
+  background-color:bisque;
+  display: grid;
+  grid-template-rows:repeat(6,auto) ;
+  gap: 10px;
+  padding: 10px;
+ 
+ 
+}
+form input[type="number"],[type="text"]{
+  width: 100%;
+   color: #fff;
+   line-height: 20px;
+   border: none;
+   border-bottom: 1px solid #fff;
+   background: transparent;
+ 
+}
+form input[type="date"]{
+
+width: 100%;
+   color: #fff;
+   line-height: 20px;
+   border: none;
+   border-bottom: 1px solid #fff;
+   background: transparent;
+}
+
+
+.tabl{
+  background-color: #fff;
+	border: 1px solid #eee;
+  color: #222;
+	display: grid;
+	font-size: 14px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+
+}
+.inputbox{
+display: grid;
+grid-template-rows:repeat(3,auto) ;
+gap: 10px;
+}
+.inputbox select {
+  color: #fff;
+
+  line-height: 20px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+
+}
+.rad{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto;
+  
+}
+
+
+
+table { 
+	border-collapse: collapse; 
+	margin:2em 2em;
+  text-align: center;
+	}
+
+
+
+tbody tr,td{
+  background-color: #3498db;
+}
+
+th,tr,td { 
+	background: #3498db; 
+	color: rgb(255, 255, 255); 
+	font-weight: bold; 
+  padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	}
+
+  @media only screen and ( max-width: 600px) {
+   body{
+
+    display: grid;
+    grid-template: repeat(2,1fr)/auto ;
+  }
+    
+  }
+    input[type="submit"]{
+      background: yellow;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 12PX;
+      outline: none;
+      line-height: 36px;
+      margin-left: 112px;
+      width: 95px;
+}
+input[type="submit"]:hover{
+  background-color: bisque;
+  color: #222;
+}
+
+.inputbox-success small{
+  color: green;
+  border-color: green;
+
+}
+.inputbox-error small {
+  color: red;
+  border-color: red;
+}
+
